@@ -1,0 +1,99 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+a:link {
+  color: navyblue;
+}
+
+a:hover {
+  color: black;
+}
+
+.name a,
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	background: gold;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+
+.name {
+  margin: 0;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+
+}
+
+
+
+.main-header {
+  text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background: gold;
+	margin-bottom: 0px;
+}
+
+
+.main-footer {
+  text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+
+
+
+
+/* =================================
+ Media Quieries
+==================================== */
+  @media (min-width: 769px) {
+
+
+      .container{
+        width: 80%;
+        max-width: 1150px;
+        margin: 0 auto;
+      }
+
+      .name,
+      .main-nav li {
+        display: inline-block;
+      }
+      .name {
+        width: 240px;
+      }
+      .nola {
+        width: 500px;
+        float: right;
+      }
+
+  }
