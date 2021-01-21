@@ -27,10 +27,20 @@ a:hover {
   color: black;
 }
 
+
+.name,
+.main-nav,
+.main-nav li {
+    display: block;
+  }
+
+
 .name a,
-.main-nav a {
+.main-nav a,
+.main-nav li {
   padding: 10px 15px;
   display: block;
+
 }
 
 .name,
@@ -39,17 +49,19 @@ a:hover {
 	background: gold;
 	margin-top: 6px;
 	margin-bottom: 6px;
+  border-style: solid;
 }
 
 
-.name {
-  margin: 0;
+.profilepicture {
+  align-items: center;:
 }
-
 /* ---- Layout Containers ---- */
 
 .container {
-
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
 }
 
 
@@ -58,7 +70,7 @@ a:hover {
   text-align: center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
-	background: gold;
+  backgrounnd: gold;
 	margin-bottom: 0px;
 }
 
@@ -70,30 +82,48 @@ a:hover {
 }
 
 
+/* ----       Images       ---- */
+
+.pic {
+  width: 650px;
+}
+
 
 
 /* =================================
  Media Quieries
 ==================================== */
+
+
   @media (min-width: 769px) {
 
+    .wrap {
+        min-height: calc(100vh - 89px);
+      }
 
       .container{
-        width: 80%;
-        max-width: 1150px;
+        width: 70%;
+        max-width: 1000px;
         margin: 0 auto;
       }
 
       .name,
+      .main-nav,
       .main-nav li {
         display: inline-block;
       }
       .name {
         width: 240px;
-      }
-      .nola {
-        width: 500px;
-        float: right;
+        margin-right: 1em;
       }
 
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+
   }
+
+  @media (min-width: 1024px)
