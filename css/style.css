@@ -19,48 +19,52 @@ body {
 
 /* ---- Navigation ---- */
 
-a:link {
-  color: navyblue;
-}
-
-a:hover {
+a {
   color: black;
 }
 
+a:link {
+  text-decoration: none;
+}
 
-.name,
-.main-nav,
-.main-nav li {
-    display: block;
-  }
+p {
+  padding-left: 3%;
+  padding-right: 3%;
+}
 
+.main-nav {
+  margin-top: 5px;
+}
 
 .name a,
-.main-nav a,
-.main-nav li {
-  padding: 10px 15px;
-  display: block;
-
-}
-
-.name,
-.main-nav li {
+.main-nav a {
 	text-align: center;
-	background: gold;
-	margin-top: 6px;
-	margin-bottom: 6px;
-  border-style: solid;
+  display: block;
+  padding: 10px 15px
 }
 
+.main-nav li{
+  text-transform: uppercase;
+  font-weight: bold;
 
-.profilepicture {
-  align-items: center;:
 }
+
+.header {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: ;
+}
+
+.title {
+  text-align: center;
+}
+
 /* ---- Layout Containers ---- */
 
 .container {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: em;
+  padding-right: em;
   text-align: center;
 }
 
@@ -70,7 +74,7 @@ a:hover {
   text-align: center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
-  backgrounnd: gold;
+  backgrounnd: #d9e4ea;
 	margin-bottom: 0px;
 }
 
@@ -84,11 +88,17 @@ a:hover {
 
 /* ----       Images       ---- */
 
-.pic {
-  width: 650px;
+img {
+	max-width: %;
 }
 
+.pic {
+  width: 85%;
+}
 
+.pic-2 {
+  width: 85%;
+}
 
 /* =================================
  Media Quieries
@@ -101,21 +111,33 @@ a:hover {
         min-height: calc(100vh - 89px);
       }
 
-      .container{
-        width: 70%;
-        max-width: 1000px;
-        margin: 0 auto;
+      .main-nav li {
+        padding-top: 8%;
+        margin-left: 1.2em;
+        margin-right: 1.2em;
       }
 
       .name,
       .main-nav,
       .main-nav li {
         display: inline-block;
+        taxt-align: center;
       }
       .name {
-        width: 240px;
-        margin-right: 1em;
+        width: 55%;
+        margin-right: 1.5em;
+        margin-left:  1.5em;
       }
+
+
+      .header {
+        text-align: center;
+      }
+
+      .title {
+        text-align: center;
+      }
+
 
       .clearfix::after {
         content: "";
@@ -123,7 +145,68 @@ a:hover {
         clear: both;
       }
 
+      .profile-picture {
+        margin-top: 2%;
+        margin-left: 4%;
+        margin-bottom: 2%;
+      }
+
+      .profile-picture,
+      .sectionb {
+        float: right;
+      }
+
+      .sectiona {
+          float: ;
+        }
+
+      .pic {
+        width: 80%;
+        display: ;
+        overflow: ;
+      }
+
+      .sectiona,
+      .sectionb {
+        width: 50%;
+        display: inline-block;
+      }
+
 
   }
 
-  @media (min-width: 1024px)
+  @media (min-width: 1024px) {
+
+  .container {
+    width: 90%;
+    max-width: 1150px;
+    align-content: center;
+  }
+
+  .main-nav  {
+    display: ;
+    float: right;
+  }
+
+  .main-nav li {
+    margin-left: 15px;
+    display: inline-block;
+    float: ;
+  }
+
+
+  .name {
+    display: ;
+    float: left;
+    margin-right: 10%;
+  }
+
+  .sectioina,
+  .sectionb {
+  width: 50%;
+
+}
+
+
+
+}
