@@ -1,212 +1,271 @@
 /* =================================
   Base Element Styles
 ==================================== */
-
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-	line-height: 1.6;
+	line-height: 1.5;
 	color: #3a3a3a;
 }
 
+span {
+	font-size: 1em;
+	color: grey;
+	text-align: center;
 
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+
+}
+
+h1 {
+	text-align: center;
+
+}
+
+h2 {
+	color: #093a58;
+	text-align: center;
+	padding-top: 2%;
+	margin-bottom: 2%;
+}
+
+h4 {
+	word-spacing: 1em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
 /* =================================
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
-a {
-  color: black;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-p {
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.main-nav {
-  margin-top: 5px;
+.name {
+	font-size: 1.5em;
 }
 
 .name a,
 .main-nav a {
 	text-align: center;
   display: block;
-  padding: 10px 15px
 }
 
-.main-nav li{
-  text-transform: uppercase;
-  font-weight: bold;
-
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+	color: black;
+	padding-top: 1%;
 }
 
-.header {
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: ;
+
+.bottom-nav {
+	float: right;
+	padding-bottom: 2%;
 }
 
-.title {
-  text-align: center;
+.bottom-nav li {
+	display: inline-block;
+	font-weight: bold;
+	padding-top: 2em;
+	padding-left: 3em;
+}
+
+
+.large-bottom-nav {
+	display: none;
 }
 
 /* ---- Layout Containers ---- */
 
-.container {
-  padding-left: em;
-  padding-right: em;
-  text-align: center;
-}
-
-
-
 .main-header {
-  text-align: center;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-  backgrounnd: #d9e4ea;
-	margin-bottom: 0px;
+  padding-top: .95em;
+  padding-bottom: .95em;
+	background-color: #ffa07a;
 }
 
+.container,
+.main {
+  text-align: center;
+
+}
+
+.profile-picture {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	padding-bottom: 4%;
+}
+
+.intro {
+	padding-right: 4%;
+  padding-left: 4%;
+	padding-top: 6%;
+}
+
+.portfolio {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.contact {
+	text-align: center;
+}
+
+.closing {
+	text-align: center;
+	padding-left: 15%;
+	padding-right: 15%;
+}
 
 .main-footer {
   text-align: center;
-	padding: 2em 0;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 4%;
+	border-bottom: 1px solid;
+	border-color: silver;
 	background: #d9e4ea;
+	color: grey;
+	padding-top: 2%;
 }
 
-
-/* ----       Images       ---- */
-
-img {
-	max-width: %;
+.col {
+padding-right: 1em;
+padding-left: 1em;
 }
 
-.pic {
-  width: 85%;
+.bottom {
+	padding-left: 3%;
+	padding-right: 3%
 }
 
-.pic-2 {
-  width: 85%;
+.bottom-title {
+	color: black;
 }
+
+/* ---- Page Elements ---- */
+
+
+
 
 /* =================================
- Media Quieries
+  Media Queries
 ==================================== */
 
 
-  @media (min-width: 769px) {
-
-    .wrap {
-        min-height: calc(100vh - 89px);
-      }
-
-      .main-nav li {
-        padding-top: 8%;
-        margin-left: 1.2em;
-        margin-right: 1.2em;
-      }
-
-      .name,
-      .main-nav,
-      .main-nav li {
-        display: inline-block;
-        taxt-align: center;
-      }
-      .name {
-        width: 55%;
-        margin-right: 1.5em;
-        margin-left:  1.5em;
-      }
 
 
-      .header {
-        text-align: center;
-      }
 
-      .title {
-        text-align: center;
-      }
+@media (min-width: 769px) {
 
-
-      .clearfix::after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      .profile-picture {
-        margin-top: 2%;
-        margin-left: 4%;
-        margin-bottom: 2%;
-      }
-
-      .profile-picture,
-      .sectionb {
-        float: right;
-      }
-
-      .sectiona {
-          float: ;
-        }
-
-      .pic {
-        width: 80%;
-        display: ;
-        overflow: ;
-      }
-
-      .sectiona,
-      .sectionb {
-        width: 50%;
-        display: inline-block;
-      }
-
-
+  .container,
+	.main {
+    width: 100%;
+    margin: 0 auto;
   }
 
-  @media (min-width: 1024px) {
+	.contact {
+		text-align: center;
+	}
 
-  .container {
-    width: 90%;
-    max-width: 1150px;
-    align-content: center;
+  .intro {
+    margin-bottom: 10%;
   }
 
-  .main-nav  {
-    display: ;
+  .profile-picture {
     float: right;
+		margin-right: -4%;
+		padding-left: 3%;
   }
 
-  .main-nav li {
-    margin-left: 15px;
-    display: inline-block;
-    float: ;
-  }
+	.portfolio {
+		margin-top: -12%;
+		padding-bottom: 5%;
+	}
 
-
-  .name {
-    display: ;
+  .col {
     float: left;
-    margin-right: 10%;
+    width: 50%;
   }
 
-  .sectioina,
-  .sectionb {
-  width: 50%;
 
+.main-nav li {
+    display: inline-block;
+    padding-left: 5%;
+  }
+
+.bottom-nav {
+	display: none;
+}
+
+.large-bottom-nav {
+	float: right;
+}
+
+.large-bottom-nav li {
+	display: inline-block;
+	font-size: 1.1em;
+	padding: .60em;
+	padding-left: .15em;
+	font-weight: bold;
 }
 
 
 
 }
+
+@media (min-width: 1024px) {
+	.main {
+    width: 100%;
+
+  }
+
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+
+ 	.col {
+    width: 33.33%
+  }
+
+	.intro {
+		padding-left: 3%;
+	}
+
+.main-header {
+	padding-left: 1em;
+	padding-right: 2em;
+}
+
+
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
