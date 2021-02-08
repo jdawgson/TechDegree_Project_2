@@ -47,6 +47,12 @@ a {
 img {
 	max-width: 100%;
 }
+
+body {
+	font-family: 'Roboto';font-size: .90em;
+}
+
+
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -85,19 +91,16 @@ img {
 }
 
 
-.large-bottom-nav {
-	display: none;
-}
 
 /* ---- Layout Containers ---- */
 
 .main-header {
   padding-top: .95em;
   padding-bottom: .95em;
+	width: 100%;
 	background-color: #ffa07a;
 }
 
-.container,
 .main {
   text-align: center;
 
@@ -148,29 +151,59 @@ padding-right: 1em;
 padding-left: 1em;
 }
 
-.bottom {
-	padding-left: 3%;
-	padding-right: 3%
+.u-hide-mobile li {
+	font-weight: bold;
+	padding: 3px;
+	padding-top: 30px;
 }
 
-.bottom-title {
-	color: black;
+.u-display-inline-block {
+	padding-left: 9px;
 }
+
+
 
 /* ---- Page Elements ---- */
-
-
-
-
 /* =================================
   Media Queries
 ==================================== */
 
 
+.u-display-mobile {
+  display: none;
+}
+.u-hide-mobile li, .u-display-inline-block {
+  display: inline-block;
+}
+
+.u-float-right {
+	float: right;
+	clear: both;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .u-display-mobile {
+    display: inline-block;
+  }
+
+  .u-hide-mobile {
+    display: none;
+		font-weight: bold;
+		padding: 3px;
+		padding-top: 30px;
+	}
+}
+
 
 
 
 @media (min-width: 769px) {
+
+	.u-display-mobile  {
+	  display: none;
+		font-weight: bold;
+	}
+
 
   .container,
 	.main {
@@ -205,26 +238,12 @@ padding-left: 1em;
 
 .main-nav li {
     display: inline-block;
-    padding-left: 5%;
+    padding: 1%;
   }
 
-.bottom-nav {
-	display: none;
+.main-nav {
+	text-align: center;
 }
-
-.large-bottom-nav {
-	float: right;
-}
-
-.large-bottom-nav li {
-	display: inline-block;
-	font-size: 1.1em;
-	padding: .60em;
-	padding-left: .15em;
-	font-weight: bold;
-}
-
-
 
 }
 
@@ -240,10 +259,13 @@ padding-left: 1em;
 
 	.main-nav {
 		float: right;
+		padding: .75em;
+		text-align: center;
 	}
 
 	.main-nav li {
 		display: inline-block;
+		padding: 25px;
 	}
 
  	.col {
