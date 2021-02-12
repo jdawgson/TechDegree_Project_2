@@ -169,41 +169,41 @@ padding-left: 1em;
 ==================================== */
 
 
-.u-display-mobile {
-  display: none;
-}
-.u-hide-mobile li, .u-display-inline-block {
-  display: inline-block;
-}
+	.u-hide-mobile li, .u-display-inline-block {
+	  display: inline-block;
+	}
 
-.u-float-right {
-	float: right;
-	clear: both;
-}
+	.u-float-right {
+		float: right;
+		clear: both;
+	}
 
-@media (min-width: 0px) and (max-width: 320px) {
   .u-display-mobile {
     display: inline-block;
+		padding-top: 1.5em;
+		padding-right: .85em;
+		font-weight: bold;
   }
 
   .u-hide-mobile {
     display: none;
-		font-weight: bold;
-		padding: 3px;
-		padding-top: 30px;
 	}
-}
 
 
-
-
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 	.u-display-mobile  {
 	  display: none;
 		font-weight: bold;
 	}
 
+	.u-hide-mobile {
+		display: inline-block;
+		font-weight: bold;
+		padding: 3px;
+		padding-top: .20em;
+		padding-right: .15em;
+	}
 
   .container,
 	.main {
